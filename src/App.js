@@ -3,19 +3,13 @@ import "./App.css";
 import Editor from "./components/Editor";
 import Previewer from "./components/Previewer";
 import Header from "./components/Header";
+import "./tailwind.output.css";
 
 function App() {
   return (
-    <div className="App" style={{ height: "100vh" }}>
+    <div className="App h-screen bg-indigo-200 flex flex-col">
       <Header />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-around",
-          height: "100%",
-        }}
-      >
+      <div className="flex justify-around flex-1">
         <Editor />
         <Previewer />
       </div>

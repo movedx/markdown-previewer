@@ -2,11 +2,7 @@ import React from "react";
 import "../tailwind.output.css";
 
 const Header = () => {
-  return (
-    <div className="bg-red-400" style={{ height: "60px" }}>
-      Header
-    </div>
-  );
+  return <div className="bg-indigo-200 h-20"></div>;
 };
 
 export default Header;
