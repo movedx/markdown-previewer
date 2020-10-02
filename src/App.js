@@ -7,7 +7,7 @@ import "./tailwind.output.css";
 
 function App() {
   return (
-    <div className="App h-screen bg-indigo-200 flex flex-col">
+    <div className="App h-full bg-indigo-200 flex flex-col">
       <Header />
       <div className="flex justify-around flex-1">
         <Editor />
