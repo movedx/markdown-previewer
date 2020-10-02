@@ -7,7 +7,7 @@ const Editor = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="bg-white w-full m-1 mb-3 flex">
+    <div className="bg-white m-1 mb-3 flex flex-1">
       <textarea
         onChange={(event) => dispatch(convertMarkdown(event.target.value))}
         resize="0"
