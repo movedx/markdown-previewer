@@ -5,6 +5,7 @@ import { convertMarkdown } from "../redux/modules/markdownSlice";
 
 const Editor = () => {
   const dispatch = useDispatch();
+
   const initMarkdownText =
     "# Welcome to my React Markdown Previewer!\r\n\r\n## This is a sub-heading...\r\n### And here's some other cool stuff:\r\n\r\nHeres some code, `<div></div>`, between 2 backticks.\r\n\r\n```\r\n// this is multi-line code:\r\n\r\nfunction anotherExample(firstLine, lastLine) {\r\n  if (firstLine == '```' && lastLine == '```') {\r\n    return multiLineCode;\r\n  }\r\n}\r\n```\r\n\r\nYou can also make text **bold**... whoa!\r\nOr _italic_.\r\nOr... wait for it... **_both!_**\r\nAnd feel free to go crazy ~~crossing stuff out~~.\r\n\r\nThere's also [links](https://www.freecodecamp.com), and\r\n> Block Quotes!\r\n\r\nAnd if you want to get really crazy, even tables:\r\n\r\nWild Header | Crazy Header | Another Header?\r\n------------ | ------------- | -------------\r\nYour content can | be here, and it | can be here....\r\nAnd here. | Okay. | I think we get it.\r\n\r\n- And of course there are lists.\r\n  - Some are bulleted.\r\n     - With different indentation levels.\r\n        - That look like this.\r\n\r\n\r\n1. And there are numbered lists too.\r\n1. Use just 1s if you want!\r\n1. And last but not least, let's not forget embedded images:\r\n\r\n![React Logo w/ Text](https://miro.medium.com/max/256/1*gGh9I9ju9w4lXhmWoG2fXA.png)";
 
@@ -26,7 +27,7 @@ const Editor = () => {
         value={text}
         onChange={handleInput}
         resize="0"
-        className="p-1 w-full border-solid border-2 border-gray-600 resize-none bg-white"
+        className="p-1 w-full flex-1 border-solid border-2 border-gray-600 resize-none bg-white"
       ></textarea>
     </div>
   );
